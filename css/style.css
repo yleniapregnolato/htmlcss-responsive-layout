@@ -4,3 +4,74 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: PT Sans;
+}
+
+img {
+    max-width: 100%;
+}
+  /* COMMON */
+
+  .container {
+    width: 100%;
+    max-width: 1500px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  :root {
+    --header-color: #0084FD;
+    --hero-box-color: #B5DDFF;
+    --main-color: #9792E4;
+    --free-color: #FDC15F;
+    --footer-color: #333333;
+  }
+  /* /COMMON */
+
+  /* UTILITIES */
+  .flex {
+    display: flex;
+  }
+  /* /UTILITIES */
+
+  /* HEADER */
+  .header {
+    background-color: var(--header-color);
+    /* debug*/
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .header-menu ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    color: white;
+    padding-right: 20px;
+    display: none;
+  }
+
+  .header-logo {
+    padding-left: 20px;
+  }
+
+  .hamburger-menu {
+    padding-right: 20px;
+  }
+
+  .hamburger-menu-btn {
+    background-color: transparent;
+    border: 0;
+    font-size: 1.7rem;
+    color: white;
+  }
+  /* /HEADER */
+
+  
