@@ -75,6 +75,11 @@ img {
     color: white;
   }
 /* media query header */
+@media screen and (min-width: 768px) {
+  .header-logo {
+    padding-left: 20px;
+  }
+}
   @media screen and (min-width: 992px) {
 
     .header .container {
