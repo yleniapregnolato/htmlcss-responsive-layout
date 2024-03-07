@@ -57,7 +57,7 @@ img {
     gap: 15px;
     list-style-type: none;
     color: white;
-    padding-right: 20px;
+    padding-right: 40px;
   }
 
   .header-logo {
@@ -74,7 +74,7 @@ img {
     font-size: 1.7rem;
     color: white;
   }
-
+/* media query header */
   @media screen and (min-width: 992px) {
 
     .header-menu {
@@ -89,6 +89,7 @@ img {
       padding: 50px 0;
     }
   }
+  /* /media query header */
   /* /HEADER */
 
   /* MAIN */
@@ -129,6 +130,17 @@ img {
 
      .colums {
       padding: 50px 0;
+
+    }
+
+    .hamburger-menu {
+      padding-right: 20px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    #card-section .container {
+      width: 70%;
     }
   }
   /* /media quert 5 cards section */
@@ -154,7 +166,7 @@ img {
     background-color: white;
     border-radius: 30px;
   }
-
+/* media query strategic section */
   @media screen and (min-width: 992px) {
     .planning .container {
       width: 60%;
@@ -162,5 +174,36 @@ img {
       gap: 20px;
     }
   }
+  /* /media query strategic section */
   /* /strategic section */
+  /* testimonial section */
+
+  #testimonials-section .colums .partners {
+      background-color: white;
+      /* debug */
+      border: 1px solid black;
+    }
+  #testimonials-section .col {
+      background-color: var(--main-color);
+      /* debug */
+      height: 500px;
+    }
+
+  /* media query testimonials section */
+  @media screen and (min-width: 768px) {
+    #testimonials-section .colums {
+      display: block;
+    }
+    #testimonials-section .col {
+      height: 200px;
+  }
+}
+  @media screen and (min-width: 992px) {
+    #testimonials-section .container {
+      width: 70%;
+      padding: 50px;
+    }
+  }
+  /* /media querty testimonials section */
+  /* /testimonials section */
   /* /MAIN */
