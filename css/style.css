@@ -126,11 +126,41 @@ img {
      #card-section .col:nth-child(1) {
       width: calc(60% + 20px)
      }
-     
+
      .colums {
       padding: 50px 0;
     }
   }
   /* /media quert 5 cards section */
   /* /5 card section */
+
+  /* strategic section */
+
+  main .planning {
+    background-color: var(--main-color);
+  }
+  .planning .container {
+    padding: 50px 0;
+  }
+  .item {
+    width: 90%;
+    background-color: #BCB5EE;
+    /* debug */
+    height: 650px;
+    margin: 40px auto;
+  }
+
+  .developement {
+    background-color: white;
+    border-radius: 30px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .planning .container {
+      width: 60%;
+      display: flex;
+      gap: 20px;
+    }
+  }
+  /* /strategic section */
   /* /MAIN */
