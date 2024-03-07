@@ -77,6 +77,10 @@ img {
 /* media query header */
   @media screen and (min-width: 992px) {
 
+    .header .container {
+      width: 70%;
+    }
+
     .header-menu {
       display: block;
     }
@@ -88,6 +92,7 @@ img {
     .colums {
       padding: 50px 0;
     }
+
   }
   /* /media query header */
   /* /HEADER */
