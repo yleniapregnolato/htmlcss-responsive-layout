@@ -204,6 +204,36 @@ img {
       padding: 50px;
     }
   }
-  /* /media querty testimonials section */
+  /* /media query testimonials section */
   /* /testimonials section */
+  /* benefits section */
+#benefits-section {
+  background-color: var(--main-color);
+  padding-top: 30px;
+}
+
+#benefits-section .colums .col {
+  background-color: white;
+  /* debug */
+  height: 300px;
+}
+
+.title-benefits {
+  width: 80%;
+  background-color: white;
+  margin: 0 auto;
+  /* debug */
+  height: 80px;
+  border: 1px solid black;
+}
+  /* media query benefits section */
+@media screen and (min-width: 768px) {
+#benefits-section .colums {
+}
+#benefits-section .col {
+  width: calc(100% / 2 - 40px)
+}
+}
+  /* /media query benefits section */
+  /* /benefits section */
   /* /MAIN */
