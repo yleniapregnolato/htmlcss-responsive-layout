@@ -16,6 +16,7 @@ body {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 /* COMMON */
@@ -32,6 +33,7 @@ img {
   --main-color: #9792E4;
   --free-color: #FDC15F;
   --footer-color: #333333;
+  --text-color: #5A6E7F;
 }
 
 /* /COMMON */
@@ -127,9 +129,50 @@ img {
   border-radius: 10px;
   margin-bottom: 20px;
   /* debug */
-  height: 500px;
+  /* height: 500px; */
 }
 
+#card-section .col:nth-child(1) {
+  flex-direction: column;
+}
+#card-section h3 {
+  color: var(--header-color);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0 20px;
+  padding-top: 20px;
+}
+
+#card-section p {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 20px;
+  padding-bottom: 50px;
+  line-height: 25px;
+}
+
+#card-section a {
+  background-color: var(--header-color);
+  text-align: center;
+  padding: 10px 40px;
+  margin: 0 80px;
+  border-radius: 20px;
+  color: white;
+}
+
+#card-section img {
+  padding-top: 30px;
+}
+
+.icons {
+  color: var(--header-color);
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 3.5rem;
+}
 /* media query 5 cards section */
 
 @media screen and (min-width: 768px) {
@@ -162,6 +205,11 @@ img {
   .hamburger-menu {
     padding-right: 20px;
   }
+
+  #card-section .col:nth-child(1) {
+    justify-content: left;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
