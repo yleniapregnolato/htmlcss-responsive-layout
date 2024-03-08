@@ -308,7 +308,7 @@ main .planning {
   padding: 30px;
 }
 .small-container {
-  width: 90%;
+  width: 99%;
   max-width: 500px;
   margin: 0 auto;
   /* debug */
@@ -319,7 +319,7 @@ main .planning {
 /* media query cta section */
 @media screen and (min-width: 768px) {
   .small-container {
-    width: 80%;
+    width: 85%;
   }
   
 }
@@ -331,7 +331,14 @@ main .planning {
   
 }
 /* /media query cta section */
+
 /* /cta section */
 
-
 /* /MAIN */
+
+/* footer */
+footer {
+  background-color: var(--footer-color);
+  padding: 30px;
+}
+/* /footer */
