@@ -280,7 +280,7 @@ main .planning {
 
 /* /benefits section */
 
-/* about section */
+/* media query about section */
 @media screen and (min-width: 768px) {
   #about-section .container .colums{
     display: flex;
@@ -300,6 +300,38 @@ main .planning {
   }
   
 }
-/* /about section */
+/* /media query about section */
+
+/* cta section */
+#cta-section {
+  background-color: var(--main-color);
+  padding: 30px;
+}
+.small-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  /* debug */
+  height: 800px;
+  background-color: white;
+}
+
+/* media query cta section */
+@media screen and (min-width: 768px) {
+  .small-container {
+    width: 80%;
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
+  .small-container {
+    width: 70%;
+  }
+  
+}
+/* /media query cta section */
+/* /cta section */
+
 
 /* /MAIN */
