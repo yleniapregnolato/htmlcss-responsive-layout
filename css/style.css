@@ -1,222 +1,247 @@
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-    font-family: PT Sans;
+  font-family: PT Sans;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-  /* COMMON */
 
-  .container {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-  }
+/* COMMON */
 
-  :root {
-    --header-color: #0084FD;
-    --box-color: #B5DDFF;
-    --main-color: #9792E4;
-    --free-color: #FDC15F;
-    --footer-color: #333333;
-  }
-  /* /COMMON */
+.container {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  /* UTILITIES */
-  .flex {
-    display: flex;
-  }
-  /* /UTILITIES */
+:root {
+  --header-color: #0084FD;
+  --box-color: #B5DDFF;
+  --main-color: #9792E4;
+  --free-color: #FDC15F;
+  --footer-color: #333333;
+}
 
-  /* HEADER */
-  .header {
-    background-color: var(--header-color);
-    /* debug*/
-    height: 70px;
-    line-height: 70px;
-  }
+/* /COMMON */
 
-  .header-menu {
-    display: none;
-  }
+/* UTILITIES */
+.flex {
+  display: flex;
+}
 
-  .header-menu ul {
-    display: flex;
-    gap: 15px;
-    list-style-type: none;
-    color: white;
-    padding-right: 40px;
-  }
+/* /UTILITIES */
 
-  .header-logo {
-    padding-left: 40px;
-  }
+/* HEADER */
+.header {
+  background-color: var(--header-color);
+  /* debug*/
+  height: 70px;
+  line-height: 70px;
+}
 
-  .hamburger-menu {
-    padding-right: 40px;
-  }
+.header-menu {
+  display: none;
+}
 
-  .hamburger-menu-btn {
-    background-color: transparent;
-    border: 0;
-    font-size: 1.7rem;
-    color: white;
-  }
+.header-menu ul {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  color: white;
+  padding-right: 40px;
+}
+
+.header-logo {
+  padding-left: 40px;
+}
+
+.hamburger-menu {
+  padding-right: 40px;
+}
+
+.hamburger-menu-btn {
+  background-color: transparent;
+  border: 0;
+  font-size: 1.7rem;
+  color: white;
+}
+
 /* media query header */
 @media screen and (min-width: 768px) {
   .header-logo {
     padding-left: 20px;
   }
 }
-  @media screen and (min-width: 992px) {
 
-    .header .container {
-      width: 70%;
-    }
+@media screen and (min-width: 992px) {
 
-    .header-menu {
-      display: block;
-    }
-
-    .hamburger-menu {
-      display: none;
-    }
-
-    .colums {
-      padding: 50px 0;
-    }
-
+  .header .container {
+    width: 70%;
   }
-  /* /media query header */
-  /* /HEADER */
 
-  /* MAIN */
-  /* 5 cards section */
-  
+  .header-menu {
+    display: block;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
   .colums {
-    padding: 50px 40px;
-  }
-
-  .col {
-    background-color: var(--box-color);
-    border-radius: 10px;
-    margin-bottom: 20px;
-    /* debug */
-    height: 500px;
-  }
- /* media query 5 cards section */
-  @media screen and (min-width: 768px) {
-    .container {
-      width: 90%;
-      justify-content: space-between;
-      margin: 0 auto;
-    }
-     .colums {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-     }
-
-     #card-section .col {
-        width: 30%;
-     }
-
-     #card-section .col:nth-child(1) {
-      width: calc(60% + 20px)
-     }
-
-     .colums {
-      padding: 50px 0;
-
-    }
-
-    .hamburger-menu {
-      padding-right: 20px;
-    }
-  }
-
-  @media screen and (min-width: 992px) {
-    #card-section .container {
-      width: 70%;
-    }
-  }
-  /* /media quert 5 cards section */
-  /* /5 card section */
-
-  /* strategic section */
-
-  main .planning {
-    background-color: var(--main-color);
-  }
-  .planning .container {
     padding: 50px 0;
   }
-  .item {
+
+}
+/* /media query header */
+
+/* /HEADER */
+
+/* MAIN */
+
+/* 5 cards section */
+
+.colums {
+  padding: 50px 40px;
+}
+
+.col {
+  background-color: var(--box-color);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  /* debug */
+  height: 500px;
+}
+
+/* media query 5 cards section */
+
+@media screen and (min-width: 768px) {
+  .container {
     width: 90%;
-    background-color: #BCB5EE;
-    /* debug */
-    height: 650px;
-    margin: 40px auto;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 
-  .developement {
-    background-color: white;
-    border-radius: 30px;
+  .colums {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
-/* media query strategic section */
-  @media screen and (min-width: 992px) {
-    .planning .container {
-      width: 60%;
-      display: flex;
-      gap: 20px;
-    }
+
+  #card-section .col {
+    width: 30%;
   }
-  /* /media query strategic section */
-  /* /strategic section */
-  /* testimonial section */
 
-  #testimonials-section .colums .partners {
-      background-color: white;
-      /* debug */
-      border: 1px solid black;
-    }
-  #testimonials-section .col {
-      background-color: var(--main-color);
-      /* debug */
-      height: 500px;
-    }
+  #card-section .col:nth-child(1) {
+    width: calc(60% + 20px)
+  }
 
-  /* media query testimonials section */
-  @media screen and (min-width: 768px) {
-    #testimonials-section .colums {
-      display: block;
-    }
-    #testimonials-section .col {
-      height: 200px;
+  .colums {
+    padding: 50px 0;
+
+  }
+
+  .hamburger-menu {
+    padding-right: 20px;
   }
 }
-  @media screen and (min-width: 992px) {
-    #testimonials-section .container {
-      width: 70%;
-      padding: 50px;
-    }
+
+@media screen and (min-width: 992px) {
+  #card-section .container {
+    width: 70%;
   }
-  /* /media query testimonials section */
-  /* /testimonials section */
-  /* benefits section */
+}
+
+/* /media quert 5 cards section */
+
+/* /5 card section */
+
+/* strategic section */
+
+main .planning {
+  background-color: var(--main-color);
+}
+
+.planning .container {
+  padding: 50px 0;
+}
+
+.item {
+  width: 90%;
+  background-color: #BCB5EE;
+  /* debug */
+  height: 650px;
+  margin: 40px auto;
+}
+
+.developement {
+  background-color: white;
+  border-radius: 30px;
+}
+
+/* media query strategic section */
+@media screen and (min-width: 992px) {
+  .planning .container {
+    width: 60%;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+/* /media query strategic section */
+
+/* /strategic section */
+
+/* testimonial section */
+
+#testimonials-section .colums .partners {
+  background-color: white;
+  /* debug */
+  border: 1px solid black;
+}
+
+#testimonials-section .col {
+  background-color: var(--main-color);
+  /* debug */
+  height: 500px;
+}
+
+/* media query testimonials section */
+@media screen and (min-width: 768px) {
+  #testimonials-section .colums {
+    display: block;
+  }
+
+  #testimonials-section .col {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #testimonials-section .container {
+    width: 70%;
+    padding: 50px;
+  }
+}
+
+/* /media query testimonials section */
+
+/* /testimonials section */
+
+/* benefits section */
+
 #benefits-section {
   background-color: var(--main-color);
   padding-top: 30px;
@@ -236,13 +261,13 @@ img {
   height: 80px;
   border: 1px solid black;
 }
-  /* media query benefits section */
+
+/* media query benefits section */
+
 @media screen and (min-width: 768px) {
-#benefits-section .colums {
-}
-#benefits-section .col {
-  width: calc(100% / 2 - 40px)
-}
+  #benefits-section .col {
+    width: calc(100% / 2 - 40px)
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -250,6 +275,31 @@ img {
     width: calc(100% / 3 - 40px);
   }
 }
-  /* /media query benefits section */
-  /* /benefits section */
-  /* /MAIN */
+
+/* /media query benefits section */
+
+/* /benefits section */
+
+/* about section */
+@media screen and (min-width: 768px) {
+  #about-section .container .colums{
+    display: flex;
+  }
+  #about-section .col:nth-child(1) {
+    width: calc(59% - 20px)
+  }
+  
+  #about-section .col:nth-child(2) {
+    width: calc(39% - 20px)
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #about-section .container {
+    width: 65%;
+  }
+  
+}
+/* /about section */
+
+/* /MAIN */
