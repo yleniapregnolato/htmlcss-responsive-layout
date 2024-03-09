@@ -526,7 +526,7 @@ main .planning {
   object-fit: cover;
 }
 
-.fa-quote-left {
+.quote-about {
   font-size: 3.5rem;
   color: var(--main-color);
   position: absolute;
@@ -553,7 +553,7 @@ main .planning {
     width: calc(39% - 20px)
   }
 
-  #about-section .fa-quote-left {
+  #about-section .quote-about {
     position: absolute;
     right: 35px;
   }
@@ -564,7 +564,7 @@ main .planning {
     width: 65%;
   }
 
-  #about-section .fa-quote-left {
+  #about-section .quote-about{
     position: absolute;
     right: 35px;
   }
@@ -660,5 +660,30 @@ main .planning {
 footer {
   background-color: var(--footer-color);
   padding: 30px;
+}
+
+#footer p {
+  color: white;
+  text-align: center;
+  line-height: 25px;
+}
+
+.last-ph {
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+#footer a {
+  text-decoration: underline;
+  color: var(--main-color)
+}
+
+#footer .boolean {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  #footer .boolean {
+    display: block;
+  }
 }
 /* /footer */
