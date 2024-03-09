@@ -492,6 +492,54 @@ main .planning {
 
 /* /benefits section */
 
+/* about section */
+
+#about-section .col {
+  background-color: inherit;
+  position: relative;
+}
+
+#about-section h2 {
+  color: var(--main-color);
+  font-size: 2.2rem;
+  padding-bottom: 20px;
+}
+
+#about-section h3 {
+  color: var(--main-color);
+  font-size: 2rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#about-section p {
+  line-height: 30px;
+}
+
+#about-section .second-ph {
+  padding-top: 50px;
+}
+
+#about-section .col img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.fa-quote-left {
+  font-size: 3.5rem;
+  color: var(--main-color);
+  position: absolute;
+  top: 0;
+  right: 150px;
+}
+
+#about-section a {
+  padding: 10px 30px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 40px;
+}
 /* media query about section */
 @media screen and (min-width: 768px) {
   #about-section .container .colums{
@@ -504,15 +552,27 @@ main .planning {
   #about-section .col:nth-child(2) {
     width: calc(39% - 20px)
   }
+
+  #about-section .fa-quote-left {
+    position: absolute;
+    right: 35px;
+  }
 }
 
 @media screen and (min-width: 992px) {
   #about-section .container {
     width: 65%;
   }
+
+  #about-section .fa-quote-left {
+    position: absolute;
+    right: 35px;
+  }
   
 }
 /* /media query about section */
+
+/* /about section */
 
 /* cta section */
 #cta-section {
