@@ -401,16 +401,13 @@ main .planning {
     display: block;
   }
 
-  #testimonials-section .col:nth-child(2){
+  #testimonials-section .col:nth-child(n+2) {
     display: flex;
   }
 
-  #testimonials-section .col:nth-child(3) {
-    display: flex;
-  }
-
-  #testimonials-section .col:nth-child(4) {
-    display: flex;
+  #testimonials-section .col:nth-child(n+2) p {
+    padding-right: 50px;
+    padding-top: 30px;
   }
 
   #testimonials-section .testimonials-img {
@@ -441,19 +438,42 @@ main .planning {
 
 #benefits-section .colums .col {
   background-color: white;
-  /* debug */
-  height: 300px;
+  padding-bottom: 40px;
 }
 
 .title-benefits {
   width: 80%;
-  background-color: white;
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
   margin: 0 auto;
-  /* debug */
-  height: 80px;
-  border: 1px solid black;
 }
 
+#benefits-section .col h2 {
+  color: var(--main-color);
+  font-size: 2.5rem;
+  padding: 20px;
+}
+
+#benefits-section .col h3 {
+  color: var(--main-color);
+  padding: 20px;
+}
+
+#benefits-section .col p {
+  color: var(--text-color);
+  line-height: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+#benefits-section .more {
+  padding: 15px 30px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 30px;
+  margin-left: 20px;
+}
 /* media query benefits section */
 
 @media screen and (min-width: 768px) {
