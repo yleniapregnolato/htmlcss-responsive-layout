@@ -583,11 +583,59 @@ main .planning {
   width: 99%;
   max-width: 500px;
   margin: 0 auto;
-  /* debug */
-  height: 800px;
-  background-color: white;
 }
 
+#cta-section h4 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: lighter;
+  padding-bottom: 30px;
+}
+
+#cta-section h3 {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+
+#cta-section h2 {
+  text-align: center;
+  color: var(--free-color);
+  font-size: 3.2rem;
+  padding-bottom: 20px;
+}
+
+#cta-section p {
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  font-size: 1rem;
+}
+
+#cta-section a {
+  padding: 20px 60px;
+  background-color: white;
+  border-radius: 40px;
+  color: var(--main-color);
+}
+
+#cta-section .start {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.fa-circle {
+  font-size: 0.5rem;
+}
+
+#cta-section .copyright .privacy {
+  padding: 0;
+  background-color: var(--main-color);
+  color: white;
+  text-decoration: underline;
+}
 /* media query cta section */
 @media screen and (min-width: 768px) {
   .small-container {
