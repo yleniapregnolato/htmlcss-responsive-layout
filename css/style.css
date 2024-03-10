@@ -152,11 +152,15 @@ img {
   background-color: var(--header-color);
   text-align: center;
   padding: 10px 40px;
-  margin: 0 80px;
+  width: 50%;
   border-radius: 20px;
   color: white;
 }
 
+.app-store {
+  display: flex;
+  justify-content: center;
+}
 #card-section img {
   padding-top: 30px;
 }
@@ -225,6 +229,9 @@ img {
     text-align: center;
   }
 
+  .app-store {
+    justify-content: left;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -245,9 +252,14 @@ img {
     align-items: end;
   }
 
+  #card-section a {
+    width: 80%;
+    padding: 10px 30px;
+  }
+
 }
 
-/* /media quert 5 cards section */
+/* /media query 5 cards section */
 
 /* /5 card section */
 
