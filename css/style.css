@@ -155,12 +155,14 @@ img {
   width: 50%;
   border-radius: 20px;
   color: white;
+  display: inline-block;
 }
 
 .app-store {
   display: flex;
   justify-content: center;
 }
+
 #card-section img {
   padding-top: 30px;
 }
