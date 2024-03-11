@@ -510,7 +510,6 @@ main .planning {
 
 #about-section .col {
   background-color: inherit;
-  position: relative;
 }
 
 #about-section h2 {
@@ -533,6 +532,10 @@ main .planning {
   padding-top: 50px;
 }
 
+#about-section .about-img {
+  position: relative;
+}
+
 #about-section .col img {
   height: 200px;
   width: 200px;
@@ -544,7 +547,7 @@ main .planning {
   font-size: 3.5rem;
   color: var(--main-color);
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 150px;
 }
 
